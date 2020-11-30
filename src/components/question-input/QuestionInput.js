@@ -15,8 +15,8 @@ const QuestionInput = ({answerStatus, answer, id, updatedAnswerStatus, handleAns
     
     const answerCheck = (input, answer) => {
         let result;
+        input = input.replace(/,/g, '');
         const numberInput = Number(input);
-        console.log()
         if (numberInput) {
             result = (numberInput === answer);
         } else {
